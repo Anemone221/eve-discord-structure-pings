@@ -1,0 +1,43 @@
+2 endpoints
+/characters/{character_id}/notifications/    #10 minutes
+/corporations/{corporation_id}/structures/   # 60 minute cache
+
+http or curl requests?
+probably http requests
+
+
+
+on timer ping notifications and structures based on cache to recieve new information
+
+require ceo character
+
+
+planned commands
+
+/registeraccount
+opens a eve sso login in your default broswer
+will generate a token that will be asked to be pasted into the discord bot
+
+/list users command
+list all registered eve sso login'sso
+
+/purge users -confirm
+will purge all eve sso login tokens
+
+/choosechannel {name}
+choose the channel you want discord pings to go into
+
+    - pull in all of the servers channels
+
+/pingrole {type}
+determine who gets pings: @everyone, @here, @role, @user
+
+    - will need to pull in all roles and users to allow this.
+
+/pingtype {type}
+    determine which type of events get ping: low fuel daily {default}, low fuel <24hrs, attack, reiforcement, destruction,
+    further qualifier for: metenox, upwell, starbase, poco, all {default}
+
+/resetnotificaiton {confirm}
+resets all notifications to defaults
+
