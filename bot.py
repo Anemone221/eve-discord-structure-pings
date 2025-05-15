@@ -22,5 +22,5 @@ bot.run(TOKEN)
 
 @bot.event
 async def on_ready():
-    await bot.tree.sync(guild=discord.Object(id=163735134951047169))  # replace with your test guild ID
+    await bot.tree.sync(guild=discord.Object(id=os.getenv("testing_Guild")))  # replace with your test guild ID
     print(f"Synced slash commands to dev guild.")
