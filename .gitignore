@@ -1,2 +1,25 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Env & secrets
 .env
-.vscode
+
+# Pytest & test cache
+.pytest_cache/
+.coverage
+*.cover
+
+# VS Code
+.vscode/
+
+# OS stuff
+.DS_Store
+Thumbs.db
+
+# Virtualenvs
+.venv/
+venv/
+ENV/
+env/

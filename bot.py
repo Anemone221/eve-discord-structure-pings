@@ -9,7 +9,7 @@ import asyncio
 load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
 GUILD_ID = int(os.getenv("TESTING_GUILD"))
-testroleid = int(os.getenv("1372412561642885141"))
+testroleid = int(os.getenv("TESTING_ROLE"))
 
 intents = discord.Intents.default()
 intents.message_content = True
